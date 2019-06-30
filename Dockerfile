@@ -7,6 +7,9 @@ WORKDIR $APP_ROOT
 RUN apt-get update -qq && apt-get install -y build-essential --no-install-recommends && \
     rm -rf /var/lib/apt/lists/*
 
+RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - && \
+    apt-get install -y nodejs
+
 COPY Gemfile Gemfile.lock $APP_ROOT
 
 RUN \
