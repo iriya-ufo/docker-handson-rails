@@ -1,24 +1,13 @@
-# README
+# Docker 勉強会のコード
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+初期状態の Rails リポジトリを Docker で動かす
 
-Things you may want to cover:
+## 実行方法
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+$ git clone git@github.com:iriya-ufo/docker-handson-rails.git
+$ cd docker-handson-rails
+$ touch .env
+$ docker-compose build
+$ docker-compose up
+```
