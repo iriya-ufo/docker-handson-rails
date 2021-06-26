@@ -9,8 +9,8 @@ $ git clone git@github.com:iriya-ufo/docker-handson-rails.git
 $ cd docker-handson-rails
 $ touch .env
 $ touch config/database.yml
-$ docker-compose build
-$ docker-compose up
+$ docker compose build
+$ docker compose up
 ```
 
 `database.yml` の例を以下に示す
